@@ -13,6 +13,15 @@ import { AddNewContractComponent } from './contract/add-new-contract/add-new-con
 import { AddNewContractDetailComponent } from './contract/add-new-contract-detail/add-new-contract-detail.component';
 import { ListUsingServiceComponent } from './contract/list-using-service/list-using-service.component';
 import { RegisterServiceComponent } from './contract/register-service/register-service.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HomeComponent } from './home/home.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatInputModule} from "@angular/material/input";
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   declarations: [
@@ -26,11 +35,20 @@ import { RegisterServiceComponent } from './contract/register-service/register-s
     AddNewContractComponent,
     AddNewContractDetailComponent,
     ListUsingServiceComponent,
-    RegisterServiceComponent
+    RegisterServiceComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FontAwesomeModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

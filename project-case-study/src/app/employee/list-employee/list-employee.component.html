@@ -1,1 +1,35 @@
-<p>list-employee works!</p>
+<div class="row">
+  <div class="col-lg-12">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Full name</th>
+        <th scope="col">Birth day</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Id card</th>
+        <th scope="col">Email</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Position</th>
+        <th scope="col">Division</th>
+        <th scope="col">Education Degree</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{employee.id}}</td>
+        <td>{{employee.fullName}}</td>
+        <td>{{employee.birthday}}</td>
+        <td>{{employee.phone}}</td>
+        <td>{{employee.idCard}}</td>
+        <td>{{employee.email}}</td>
+        <td>{{employee.salary}}</td>
+        <td>{{employee.idPosition}}</td>
+        <td>{{employee.idDivision}}</td>
+        <td>{{employee.idEducationDegree}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
