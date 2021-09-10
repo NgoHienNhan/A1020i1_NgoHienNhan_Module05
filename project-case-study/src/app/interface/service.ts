@@ -1,13 +1,12 @@
-export interface Service{
-  id:number;
-  fullName:string;
-  area:number;
-  cost:number;
-  maxPeople:number;
-  idRentType:number;
-  standardRoom?:string;
-  other?:string;
-  poolArea?:number;
-  numberOfFloors?:number;
-  attachService?:string;
+import {RentType} from "./rentType";
+
+export interface Service {
+  id: string;
+  fullName: string;
+  area: number;
+  cost: number;
+  maxPeople: number;
+  idRentType: RentType;
+  numberOfFloors: number;
+  status: string
 }

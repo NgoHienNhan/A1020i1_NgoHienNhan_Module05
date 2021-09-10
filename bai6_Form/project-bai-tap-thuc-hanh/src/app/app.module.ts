@@ -16,7 +16,6 @@ import { Baitap1RegisterComponent } from './baitap1-register/baitap1-register.co
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     ReactiveFormsModule
   ],
   providers: [],

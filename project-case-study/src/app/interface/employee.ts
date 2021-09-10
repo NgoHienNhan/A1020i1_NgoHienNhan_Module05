@@ -1,8 +1,12 @@
+import {Position} from "./position";
+import {Division} from "./division";
+import {EducationDegree} from "./educationDegree";
+
 export interface Employee {
   id: string;
-  idPosition: number;
-  idDivision: number;
-  idEducationDegree: number;
+  position: Position;
+  division: Division;
+  educationDegree: EducationDegree;
   fullName: string;
   birthday: string;
   idCard: string;

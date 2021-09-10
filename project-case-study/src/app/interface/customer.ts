@@ -1,8 +1,11 @@
+import {TypeCus} from "./typeCus";
+import {Gender} from "./gender";
+
 export interface Customer {
   id: string;
-  idTypeCus: number;
+  idTypeCus: TypeCus;
   fullName: string;
-  gender: number;
+  gender: Gender;
   dateOfBirth: string;
   idCard: string;
   phone: string;

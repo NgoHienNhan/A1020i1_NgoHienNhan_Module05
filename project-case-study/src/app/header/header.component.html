@@ -1,24 +1,38 @@
 <div class="nav-wrap start-header" style="background:#046056; color: white; position: fixed">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-2 header-left"></div>
+      <div class="col-lg-2 header-left">
+        <div class="row">
+          <div class="col-lg-5">
+            <p style="position: absolute; bottom: 40%">Da Nang, </p>
+          </div>
+          <div class="col-lg-3">
+            <div class="" style="position: absolute;bottom: 30%">
+              <img height="50px" width="50px" [src]="'https://openweathermap.org/img/wn/'+idIcon+'@2x.png'" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <p style="font-family: 'Times New Roman',sans-serif;position: absolute;bottom: 40%">Weather: {{temp}} &deg;C</p>
+          </div>
+        </div>
+      </div>
       <div class="col-lg-8 px-0 header-center">
         <nav style="width: 80%">
           <ul style="margin: 0" class="nav-links nav-list">
             <li class="nav-links-item" style="background:#046056 ">
-              <a class="active text-white" href="">HOME</a></li>
+              <a class="active text-white" [routerLink]="['']">HOME</a></li>
             <li class="nav-links-item dropdown-custom">
               <a class="dropdown-wrap text-white" href="" style="">EMPLOYEE</a>
               <div class="dropdown-content" style="background:#046056 ">
-                <a class="dropdown-item-custom text-white" href="/employee/create">CREATE EMPLOYEE</a>
-                <a class="dropdown-item-custom text-white" href="/employee/show">LIST EMPLOYEE</a>
+                <a class="dropdown-item-custom text-white" [routerLink]="['/employee/create']">CREATE EMPLOYEE</a>
+                <a class="dropdown-item-custom text-white" [routerLink]="['/employee/show']" >LIST EMPLOYEE</a>
               </div>
             </li>
             <li class="nav-links-item dropdown-custom" style="background:#046056 ">
               <a class="dropdown-wrap text-white" href="">CUSTOMER</a>
               <div class="dropdown-content" style="background:#046056">
-                <a class="dropdown-item-custom text-white" href="/customer/create">CREATE CUSTOMER</a>
-                <a class="dropdown-item-custom text-white" href="/customer/show">LIST CUSTOMER</a>
+                <a class="dropdown-item-custom text-white" [routerLink]="['/customer/create']">CREATE CUSTOMER</a>
+                <a class="dropdown-item-custom text-white" [routerLink]="['/customer/show']">LIST CUSTOMER</a>
               </div>
             </li>
           </ul>
@@ -28,18 +42,18 @@
             <li class="nav-links-item dropdown-custom" style="background:#046056 ">
               <a class="dropdown-wrap text-white" href="">SERVICE</a>
               <div class="dropdown-content" style="background:#046056">
-                <a class="dropdown-item-custom text-white" href="/service/create}">CREATE SERVICE</a>
-                <a class="dropdown-item-custom text-white" href="/service/showAll}">LIST SERVICE</a>
+                <a class="dropdown-item-custom text-white" [routerLink]="['/service/create']">CREATE SERVICE</a>
+                <a class="dropdown-item-custom text-white" [routerLink]="['/service/showAll']">LIST SERVICE</a>
               </div>
             </li>
             <li class="nav-links-item dropdown-custom">
               <a class="dropdown-wrap text-white" href="">CONTRACT</a>
               <div class="dropdown-content" style="background:#046056; min-width: 200px">
-                <a href="/contract/createContracT" class="dropdown-item-custom text-white">
+                <a [routerLink]="['/contract/createContract']" class="dropdown-item-custom text-white">
                   CREATE CONTRACT</a>
-                <a href="/contract/createContractDetail" class="dropdown-item-custom text-white">CREATE CONTRACT
+                <a [routerLink]="['/contract/createContractDetail']" class="dropdown-item-custom text-white">CREATE CONTRACT
                   DETAIL</a>
-                <a href="/contract/show" class="dropdown-item-custom text-white">LIST USING SERVICE</a>
+                <a [routerLink]="['/contract/show']" class="dropdown-item-custom text-white">LIST USING SERVICE</a>
               </div>
             </li>
             <li class="nav-links-item" style="background:#046056 ">
